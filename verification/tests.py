@@ -32,14 +32,40 @@ TESTS = {
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": ["a", "the", "wall", "world", "nine"],
+            "answer": False,
+            "explanation": None
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+            "input": ["abc", "cba", "ba", "a", "c"],
+            "answer": True,
+            "explanation": ["cba", "ba"]
+        },
+        {
+            "input": ["chupacabra", "megachupacabra", "gigachupacabra"],
+            "answer": True,
+            "explanation": ["mega", "chupacabra"]
+        },
+        {
+            "input": ["giga", "mega", "woltz", "kilo"],
+            "answer": False,
+            "explanation": None
+        },
+        {
+            "input": ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"],
+            "answer": False,
+            "explanation": None
+        },
+        {
+            "input": ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "pacsix"],
+            "answer": True,
+            "explanation": ["pac", "six"]
+        },
+        {
+            "input": ["check", "io", "checkio"],
+            "answer": True,
+            "explanation": ["check", "io"]
+        },
+
     ]
 }
