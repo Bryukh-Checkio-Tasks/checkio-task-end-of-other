@@ -12,22 +12,22 @@ TESTS = {
         {
             "input": ["hello", "lo", "he"],
             "answer": True,
-            "explanation": "hel_lo"
+            "explanation": ["hel", "lo"]
         },
         {
             "input": ["hello", "la", "hellow", "cow"],
             "answer": False,
-            "explanation": ""
+            "explanation": None
         },
         {
             "input": ["walk", "duckwalk"],
             "answer": True,
-            "explanation": "duck_walk"
+            "explanation": ["duck", "walk"]
         },
         {
             "input": ["one"],
             "answer": False,
-            "explanation": ""
+            "explanation": None
         },
     ],
     "Extra": [

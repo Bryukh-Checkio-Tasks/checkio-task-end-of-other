@@ -58,9 +58,20 @@
     border-color: #de0202;
 }
 
+.animation-content .explanation {
+    color: #294270;
+    font-size: 20px;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.animation-content .explanation span {
+    color: #F0801A;
+}
+
 .tryit-content {
     background-color: #dfe8f7;
-    font-family: verdana;
+    font-family: Verdana, Arial, sans-serif;
 }
 
 .tryit-content .tool td{
