@@ -29,6 +29,12 @@ TESTS = {
             "answer": False,
             "explanation": None
         },
+        {
+            "input": ["helicopter", "li", "he"],
+            "answer": False,
+            "explanation": None
+        },
+
     ],
     "Extra": [
         {
