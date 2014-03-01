@@ -43,6 +43,12 @@ TESTS = {
             "explanation": None
         },
         {
+            "input": ['longest', 'aa', 'a'],
+            "answer": True,
+            "explanation": ["a", "a"]
+        },
+
+        {
             "input": ["abc", "cba", "ba", "a", "c"],
             "answer": True,
             "explanation": ["cba", "ba"]
