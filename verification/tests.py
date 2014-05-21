@@ -47,6 +47,14 @@ TESTS = {
             "answer": True,
             "explanation": ["a", "a"]
         },
+        {
+            "input": [
+                'jsakhfakljsdfhsakjdfhljkasdhfkasdjhfjklasdhfkasdhfalksjdhejkyrieucbciuwaeiuwhewkqjiorfuvnfjhbkehraa',
+                'aarhekbhjfnvufroijqkwehwuieawuicbcueirykjehdjsklafhdsakfhdsalkjfhjdsakfhdsakjlhfdjkashfdsjlkafhkasj'],
+            "answer": False,
+            "explanation": None
+        },
+
 
         {
             "input": ["abc", "cba", "ba", "a", "c"],
@@ -74,10 +82,17 @@ TESTS = {
             "explanation": ["pac", "six"]
         },
         {
+            "input": ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+                      't', 'u', 'v', 'w', 'x', 'y', 'z'],
+            "answer": False,
+            "explanation": None
+        },
+        {
             "input": ["check", "io", "checkio"],
             "answer": True,
             "explanation": ["check", "io"]
         },
+
 
     ]
 }

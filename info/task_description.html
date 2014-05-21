@@ -25,7 +25,7 @@
 </p>
 
 <p>
-    <strong>Input: </strong> A set of words.
+    <strong>Input: </strong> Words as a set of strings.
 </p>
 
 <p>
@@ -50,6 +50,14 @@ checkio({"helicopter", "li", "he"}) == False
     <strong>How it is used: </strong>
     Here you can learn about iterating through set type and string data type functions.
 </p>
+
+
+<p>
+    <strong>Precondition: </strong>
+    2 &le; len(words) &lt; 30<br>
+    all(re.match(r"\A[a-z]{1,99}\Z", w) for w in words)
+</p>
+
 
 <div class="facts for_info_only">
     <p>
