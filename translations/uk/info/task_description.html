@@ -1,0 +1,67 @@
+<img class="for_info_only" title="horse" src="{{MEDIA}}horse.png" alt="horse"
+     style="width: 300px;float: left; margin-top: 0px; "/>
+
+
+<p>
+    Для практики в лінгвістиці Роботи хочуть вивчити суфікси.
+</p>
+
+<p>
+    У цьому завданні заданий набір слів в нижньому регістрі. Перевірте чи є в цьому 
+    наборі пара слів, така, що одне слово закінчується іншим (суфікс чи збіг).<br> 
+    Наприклад: {"hi", "hello", "lo"} - "lo" це закінчення "hello", так що результатом буде True.
+</p>
+
+<p>
+    <strong>Зауваження: </strong>
+    Для цього завдання ви можете 
+    {% if "python 2" in interpreter|lower %}
+    прочитати про <a href="http://docs.python.org/2/library/stdtypes.html#set">тип даних set </a> і
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.endswith">про функції роботи з рядками символів</a>.
+    {% else %}
+    прочитати про <a href="http://docs.python.org/3/library/stdtypes.html#set">тип даних set </a> і
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.endswith">про функції роботи з рядками символів</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Вхідні дані: </strong> Слова як набір (set) рядків (str).
+</p>
+
+<p>
+    <strong>Вихідні дані: </strong> True або False, як логічний вираз.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Приклади:</strong>
+    </p>
+    <pre class="brush: python">
+checkio({"hello", "lo", "he"}) == True
+checkio({"hello", "la", "hellow", "cow"}) == False
+checkio({"walk", "duckwalk"}) == True
+checkio({"one"}) == False
+checkio({"helicopter", "li", "he"}) == False
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Як це використовується: </strong>
+    У цьому завданні ви познайомитеся з тим, як ітерувати тип даних set і також з деякими корисними функціями.
+</p>
+
+
+<p>
+    <strong>Передумови: </strong><br>
+    2 &le; len(words) &lt; 30<br>
+    all(re.match(r"\A[a-z]{1,99}\Z", w) for w in words)
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        Кожен гравець може створювати свої завдання на Checkio, починаючи з дев'ятого рівня. 
+        У вас є можливість створити головоломки для ваших друзів.
+    </p>
+</div>
+
