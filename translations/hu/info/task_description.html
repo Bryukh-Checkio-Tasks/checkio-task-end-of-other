@@ -1,0 +1,72 @@
+<img class="for_info_only" title="horse" src="{{MEDIA}}horse.png" alt="horse"
+     style="width: 300px;float: left; margin-top: 0px; "/>
+
+
+<p>
+    A nyelvi készségeik tökéletesítése végett a Robotok az utótagokat szeretnék tanulmányozni.
+</p>
+
+<p>
+    Ebben a feladatban adva néhány kisbetűből álló szó. Vizsgálja meg, hogy e szavak között 
+    van-e olyan szópár, ahol az egyik szó vége a másik szó kezdetével esik egybe (utótag-egyezés 
+    vagy teljes szóegybeesés)! <br>
+    
+    Például: {„hi”, „hello”, „lo”} – „lo” a „hello” utótagja, ezért az eredmény az True.
+</p>
+
+<p>
+    <strong>Megjegyzés: </strong>
+    e feladat megoldásához érdemes lehet elolvasni 
+    {% if "python 2" in interpreter|lower %}
+    прочитать о <a href="http://docs.python.org/2/library/stdtypes.html#set">a halmaz (set) adattípusról </a> és
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.endswith">a szövegfeldolgozó függvényekről</a>
+    szóló cikkeket (angol nyelven).
+    {% else %}
+    прочитать о <a href="http://docs.python.org/3/library/stdtypes.html#set">a halmaz (set) adattípusról </a> és
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.endswith">a szövegfeldolgozó függvényekről</a>
+    szóló cikkeket (angol nyelven).
+    {% endif %}
+</p>
+
+<p>
+    <strong>Bemeneti adatok: </strong> szavak karakterláncokból (str) álló halmaz (set) formájában.
+</p>
+
+<p>
+    <strong>Kimeneti adatok: </strong> True vagy False logikai típusként.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Példák:</strong>
+    </p>
+    <pre class="brush: python">
+checkio({"hello", "lo", "he"}) == True
+checkio({"hello", "la", "hellow", "cow"}) == False
+checkio({"walk", "duckwalk"}) == True
+checkio({"one"}) == False
+checkio({"helicopter", "li", "he"}) == False
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Alkalmazása: </strong>
+    Ennek a feladatnak a segítségével meg lehet ismerkedni a halmaz (set) adattípus 
+    iterálásával valamint néhány hasznos függvénnyel is.
+</p>
+
+
+<p>
+    <strong>Előfeltételek: </strong><br>
+    2 &le; len(words) &lt; 30<br>
+    all(re.match(r"\A[a-z]{1,99}\Z", w) for w in words)
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        Minden játékos szerkeszthet saját feladatokat is a CheckiO-n a 9-ik szint elérése után. 
+        Ön is szerkeszthet fejtörőket a barátai számára!
+    </p>
+</div>
+
