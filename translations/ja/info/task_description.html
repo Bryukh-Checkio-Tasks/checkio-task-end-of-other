@@ -1,0 +1,66 @@
+﻿<img class="for_info_only" title="horse" src="{{MEDIA}}horse.png" alt="horse"
+     style="width: 300px;float: left; margin-top: 0px; "/>
+
+
+<p>
+	言語訓練のために、私たちのロボットはサフィックス(接尾辞)について学ぼうとしています。
+</p>
+
+<p>
+	このタスクであなたは小文字の単語の集合(set)が与えられます。
+	ある単語が別の単語の末尾である(別の単語の接尾辞である)ような単語の対があるかどうか調べてください。
+	例えば: {"hi", "hello", "lo"} -- "lo"は"hello"の末尾です。したがって結果は真(True)です。
+</p>
+
+<p>
+    <strong>ヒント: </strong>このタスクのために集合(set)型で繰り返す方法と文字列データ型の関数に知っていなければいけません。
+    {% if "python 2" in interpreter|lower %}
+    より詳しくは<a href="http://docs.python.jp/2/library/stdtypes.html#set">ここの集合(set)型</a>と
+    <a href="http://docs.python.jp/2/library/stdtypes.html#str.endswith">ここの文字列関数</a>を読んでください。
+    {% else %}
+    より詳しくは<a href="http://docs.python.jp/3/library/stdtypes.html#set">ここの集合(set)型</a>と
+    <a href="http://docs.python.jp/3/library/stdtypes.html#str.endswith">ここの文字列関数</a>を読んでください。
+    {% endif %}
+</p>
+
+<p>
+    <strong>入力: </strong>複数の単語、文字列の集合。
+</p>
+
+<p>
+    <strong>出力: </strong>TrueまたはFalse、ブール型。
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>例:</strong>
+    </p>
+    <pre class="brush: python">
+checkio({"hello", "lo", "he"}) == True
+checkio({"hello", "la", "hellow", "cow"}) == False
+checkio({"walk", "duckwalk"}) == True
+checkio({"one"}) == False
+checkio({"helicopter", "li", "he"}) == False
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+	ここであなたは集合型で繰り返す方法と文字列型の関数について学ぶことができます。
+</p>
+
+
+<p>
+    <strong>事前条件: </strong>
+    2 &le; len(words) &lt; 30<br>
+    all(re.match(r"\A[a-z]{1,99}\Z", w) for w in words)
+</p>
+
+
+<div class="facts for_info_only">
+    <p>
+		レベル9以上のプレイヤーは自分自身のミッションをCheckiOで作ることができます。
+		あなたの友人への挑戦を作成し、全てのコミュニティのためにCheckiOでミッションを公開することもできます!
+    </p>
+</div>
