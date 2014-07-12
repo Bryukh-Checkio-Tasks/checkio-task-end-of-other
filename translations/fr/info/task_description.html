@@ -1,0 +1,69 @@
+<img class="for_info_only" title="horse" src="{{MEDIA}}horse.png" alt="horse"
+     style="width: 300px;float: left; margin-top: 0px; "/>
+
+
+<p>
+    Pour leur entrainement en langue, nos Robots veulent en savoir plus &agrave; propos des suffixes.
+</p>
+
+<p>
+    Dans cette t&acirc;che, on vous donne un ensemble de mots en lettres minuscules.
+    V&eacute;rifiez s'il y a une paire de mots, telle qu'un mot soit la fin d'un autre (le suffixe d'un autre).
+    Par exemple : {"hi", "hello", "lo"} -- "lo" est la fin de "hello", donc le r&eacute;sultat est True.
+</p>
+
+<p>
+    <strong>Conseils : </strong> Pour cette t&acirc;che, vous devez conna&icirc;tre la mani&egrave;re d'it&eacute;rer au travers d'un ensemble
+    et les fonctions relatives aux chaines de caract&egrave;res.
+    {% if "python 2" in interpreter|lower %}
+    Lisez en plus sur <a href="http://docs.python.org/2/library/stdtypes.html#set">les ensembles ici</a> et
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.endswith">les fonctions de chaines de caract&egrave;res ici</a>.
+    {% else %}
+    Lisez en plus sur <a href="http://docs.python.org/3/library/stdtypes.html#set">les ensembles ici</a> et
+    <a href="http://docs.python.org/3/library/stdtypes.html#str.endswith">les fonctions de chaines de caract&egrave;res ici</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Entr&eacute;e : </strong>Des mots en tant qu'ensemble de chaines de caract&egrave;res.
+</p>
+
+<p>
+    <strong>Sortie : </strong> True ou False, en tant que bool&eacute;en.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemple :</strong>
+    </p>
+    <pre class="brush: python">
+checkio({"hello", "lo", "he"}) == True
+checkio({"hello", "la", "hellow", "cow"}) == False
+checkio({"walk", "duckwalk"}) == True
+checkio({"one"}) == False
+checkio({"helicopter", "li", "he"}) == False
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>&Agrave; quoi cela sert : </strong>
+    Ici vous pouvez apprendre la mani&egrave;re d'it&eacute;rer au travers d'un ensemble
+    et les fonctions relatives aux chaines de caract&egrave;res.
+</p>
+
+
+<p>
+    <strong>Pr&eacute;condition : </strong>
+    2 &le; len(mots) &lt; 30<br>
+    all(re.match(r"\A[a-z]{1,99}\Z", w) for m in mots)
+</p>
+
+
+<div class="facts for_info_only">
+    <p>
+        &Agrave; partir du niveau 9, chaque joueur peut cr&eacute;er ses propres missions sur CheckiO.
+        Vous avez la possibilit&eacute; de cr&eacute;er des challenges pour vos amis et peut-&ecirc;tre m&ecirc;me de voir votre mission publi&eacute;e pour toute la communaut&eacute; de CheckiO !
+    </p>
+</div>
+
