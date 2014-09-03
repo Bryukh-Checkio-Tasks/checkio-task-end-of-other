@@ -1,0 +1,53 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        Read up
+        <a href="http://docs.python.org/2/library/stdtypes.html#set">set type</a> and
+    <a href="http://docs.python.org/2/library/stdtypes.html#str.endswith">string functions</a>.
+        "str.endswith" will be useful for this mission.
+<pre class="brush: python">
+"abc".endswith("bc") == True
+"abc".endswith("ab") == False
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I need some help to proceed with the mission
+    </div>
+    <div class="answer">
+        One of the simplest ways (but not the fastest) is to use double loop.
+<pre>
+for w1 in words:
+    for w2 in words:
+        something
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am gone half way through. Need help!
+    </div>
+    <div class="answer">
+        With a double loop you should be careful when w1 == w2, because it's the same word and it
+        ends with itself, so make sure to exclude it.
+<pre class="brush: python">
+if w1 == w2:
+    continue
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am stuck. I need a small hint.
+    </div>
+    <div class="answer">
+        If you find a word that ends with 'other', then you can return True and ignore the loops.
+        If loops are ended, then return False.
+    </div>
+</div>
+
+</body>
