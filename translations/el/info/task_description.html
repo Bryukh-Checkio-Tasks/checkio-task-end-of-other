@@ -1,0 +1,56 @@
+﻿<img class="for_info_only" title="horse" src="{{MEDIA}}horse.png" alt="horse"
+     style="width: 300px;float: left; margin-top: 0px; "/>
+
+
+<p>
+    Για να εξασκηθούν στη γλώσσα τα ρομπότ μας θέλουν να μάθουν για τις καταλήξεις.
+</p>
+
+<p>
+    Σε αυτή την αποστολή, σου δίνεται ένα σύνολο (set) από λέξεις γραμμένες με πεζά γράμματα.
+    Σκοπός είναι να εξετάσεις αν υπάρχει ένα ζευγάρι λέξεων, τέτοιο που η μια λέξη να είναι το τέλος της άλλης (να είναι η κατάληξη της άλλης).
+    Για παράδειγμα: {"hi", "hello", "lo"} -- "lo" είναι το τέλος της λέξης "hello", επομένως το αποτέλεσμα είναι Αληθές (True).
+</p>
+
+<p>
+    <strong>Είσοδος: </strong> Λέξεις σε μορφή συνόλου strings.
+</p>
+
+<p>
+    <strong>Έξοδος: </strong> Η τιμή Αληθής (True) ή Ψευδής (False).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Παράδειγμα:</strong>
+    </p>
+    <pre class="brush: python">
+checkio({"hello", "lo", "he"}) == True
+checkio({"hello", "la", "hellow", "cow"}) == False
+checkio({"walk", "duckwalk"}) == True
+checkio({"one"}) == False
+checkio({"helicopter", "li", "he"}) == False
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Πώς χρησιμοποιείται: </strong>
+    Εδώ θα μάθεις να διασχίζεις τον τύπο δεδομένων σύνολο (set) και να χρησιμοποιείς συναρτήσεις για τον τύπο δεδομένων string.
+</p>
+
+
+<p>
+    <strong>Προϋποθέσεις: </strong>
+    2 &le; len(words) &lt; 30<br>
+    all(re.match(r"\A[a-z]{1,99}\Z", w) for w in words)
+</p>
+
+
+<div class="facts for_info_only">
+    <p>
+        Κάθε παίκτης μπορείς να δημιουργήσει τις δικές του αποστολές στο CheckiO όταν φτάσει στο επίπεδο 9. Έχεις τη δυνατότητα να δημιουργήσεις αποστολές
+        για τους φίλους σου και ίσως κάποιες από αυτές να δημοσιευθούν στο CheckiO για όλη την κοινότητα!
+    </p>
+</div>
+
