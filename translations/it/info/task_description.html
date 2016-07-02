@@ -1,0 +1,57 @@
+<img class="for_info_only" title="horse" src="{{MEDIA}}horse.png" alt="horse"
+     style="width: 300px;float: left; margin-top: 0px; "/>
+
+
+<p>
+    Per l'allenamento linguistico i Robot vogliono imparare di pi&ugrave; sui suffissi.
+</p>
+
+<p>
+    In questo compito ti viene dato un insieme di parole in carattei minuscoli.
+    Controlla se c'&egrave; una coppia di parole tale che una sia la parte finale dell'altra (ovvero un suffisso).
+    Ad esempio: {"hi", "hello", "lo"} -- "lo" &egrave; la parte finale di "hello", dunque il risultato &egrave; True.
+</p>
+
+<p>
+    <strong>Input: </strong> Parole come insieme di stringhe.
+</p>
+
+<p>
+    <strong>Output: </strong> Vero o falso, come booleano.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Esempio:</strong>
+    </p>
+    <pre class="brush: python">
+checkio({"hello", "lo", "he"}) == True
+checkio({"hello", "la", "hellow", "cow"}) == False
+checkio({"walk", "duckwalk"}) == True
+checkio({"one"}) == False
+checkio({"helicopter", "li", "he"}) == False
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Come si usa: </strong>
+    Imparerai ad iterare su insiemi e stringhe.
+</p>
+
+
+<p>
+    <strong>Prerequisiti: </strong>
+    2 &le; len(words) &lt; 30<br>
+    all(re.match(r"\A[a-z]{1,99}\Z", w) for w in words)
+</p>
+
+
+<div class="facts for_info_only">
+    <p>
+        Ogni giocatore pu&ograve; creare le proprie missioni su CheckiO a partire dal livello 9.
+        Hai l'abilit&agrave; di creare sfide per i tuoi amici e magari anche di vedere la tua missione pubblicata
+        su CheckiO per l'intera comunit&agrave;!
+    </p>
+</div>
+
