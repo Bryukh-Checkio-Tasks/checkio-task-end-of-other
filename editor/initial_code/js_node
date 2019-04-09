@@ -1,0 +1,20 @@
+"use strict";
+
+function endOfOther(name) {
+    // your code here
+    return name;
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+    console.log('Example:')
+    console.log(endOfOther(["hello", "lo", "he"]))
+
+    // These "asserts" are used for self-checking and not for an auto-testing
+    assert.equal(endOfOther(["hello", "lo", "he"]), true)
+    assert.equal(endOfOther(["hello", "la", "hellow", "cow"]), false)
+    assert.equal(endOfOther(["walk", "duckwalk"]), true)
+    assert.equal(endOfOther(["one"]), false)
+    assert.equal(endOfOther(["helicopter", "li", "he"]), false)
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}

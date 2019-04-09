@@ -26,12 +26,23 @@
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio({"hello", "lo", "he"}) == True
+
+    </pre>
+    {% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">endOfOther(["hello", "lo", "he"]) == true
+endOfOther(["hello", "la", "hellow", "cow"]) == false
+endOfOther(["walk", "duckwalk"]) == true
+endOfOther(["one"]) == false
+endOfOther(["helicopter", "li", "he"]) == false
+</pre>
+{% else %}
+<pre class="brush: python">checkio({"hello", "lo", "he"}) == True
 checkio({"hello", "la", "hellow", "cow"}) == False
 checkio({"walk", "duckwalk"}) == True
 checkio({"one"}) == False
 checkio({"helicopter", "li", "he"}) == False
-    </pre>
+</pre>
+{% endif %}
 </div>
 
 <p class="for_info_only">
